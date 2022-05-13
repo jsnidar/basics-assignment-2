@@ -10,6 +10,6 @@
   [(ngModel)]="username">
 <p>{{ username }}</p>
 <button
-  [disabled] = "!username.length ? true : false"
+  [disabled] = "!username.length"
   (click)="onClearUsername()"
 >Clear Username</button>
